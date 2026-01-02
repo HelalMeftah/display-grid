@@ -5,39 +5,20 @@
   }
 
     .parent{
-    height: 100vh;
-    width: 100%;
-    background-color: rgb(219, 170, 9);
+    height: 300px;
+    width: 500px;
+    background-color: rgb(32, 170, 180);
     display:grid;
-    /* gap: 10px; */
-    grid-template-columns:repeat(10,1fr);
-    grid-template-rows:100px auto auto 50px;
-    grid-template-areas:
-    "logo logo nav nav nav nav nav nav nav nav"
-    "section section section section section aside aside aside aside aside"
-        "section section section section section aside aside aside aside aside"
-
-    "section section section section section footer  footer footer footer footer";
-
-}
- 
-h1{
-    grid-area:logo;
-    background-color: rgb(255, 255, 255);
-}
-nav{
-    grid-area:nav;
-    background-color: rgb(238, 87, 87);
-}
-section{
-    grid-area:section;
-    background-color: rgb(87, 238, 161);
-}
-aside{
-    grid-area:aside;
-    background-color: rgb(87, 161, 238);
-}
-footer{
-    grid-area:footer;
-    background-color: rgb(161, 87, 238);
-}
+    grid-gap: 5px;
+    grid-template-columns:repeat(5,1fr);
+    grid-template-rows:auto auto 50px;
+    
+    }
+    .parent div{
+    background-color:rgb(231, 26, 139);
+    border:2px solid black;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    }
