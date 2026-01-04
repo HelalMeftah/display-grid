@@ -1,6 +1,7 @@
 
-  *{box-sizing: border-box;
-  margin: 0;
+  *{
+    box-sizing: border-box;
+    margin: 0;
 }
 .container {
   margin: 40px auto;
@@ -13,10 +14,10 @@
   height: 200px;
   transform-style: preserve-3d;
   transition: transform 1s;
-  transform-origin: right center;
+  /* transform-origin: right center; */
 }
 .box:hover {
-  transform: translateX(-100%) rotateY(-180deg);
+  transform:rotateY(-180deg);
 }
 .box .face {
   position: absolute;
@@ -32,6 +33,22 @@
 }
 .box .front {
   background-color: red;
+}
+.box .medel_1 {
+  background-color: blue;
+  transform: rotateY(90deg);
+}
+.box .medel_2 {
+  background-color: yellow;
+  transform: rotateY(90deg);
+}
+.box .medel_3 {
+  background-color: pink;
+  transform: rotateY(90deg);
+}
+.box .medel_4 {
+  background-color: purple;
+  transform: rotateY(90deg);
 }
 .box .back {
   background-color: green;
