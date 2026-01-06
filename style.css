@@ -9,6 +9,7 @@ div{
     margin-top: -50px;
     border:5px solid red;
     /* we can add any color to border */
+    /* we can */
     border-radius: 50%;
     transition: transform 0.4s;
     border-left-color: transparent;
