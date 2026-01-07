@@ -1,36 +1,33 @@
-div{
-    width: 80px;
-    height: 80px;
-    background-color:rgb(165, 156, 156);
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -50px;
-    margin-top: -50px;
-    border:5px solid red;
-    /* we can add any color to border */
-    /* we can */
-    border-radius: 50%;
-    transition: transform 0.4s;
-    border-left-color: transparent;
-    transform: rotate(1turn);
-    animation-name:spin;
-    animation-duration:1s;
-    animation-iteration-count:infinite;
-    animation-timing-function:linear;
-    animation-direction:normal;
-    /* animation-delay: 2s; */
-    /* animation-play-state: running; */
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: #eee;
+}
+
+.load {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
 
 }
-@keyframes spin {
-    from {
-        transform: rotate(0turn);
-    }
-    to {
-        transform: rotate(1turn);
-    }
+
+.load div {
+    width: 20px;
+    height: 20px;
+    background-color: orchid;
+    border-radius: 50%;
+    margin: 0 5px;
+    animation-name: up-and-down;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
 }
-div:hover{
-    animation-play-state:paused;
+
+
+@keyframes up-and-down{
+    to{
+        opacity:0.2
+    }
 }
